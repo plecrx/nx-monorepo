@@ -1,1 +1,1 @@
-export * as databaseAdminPalette from './databaseAdmin';
+export * as defaultTheme from './default';

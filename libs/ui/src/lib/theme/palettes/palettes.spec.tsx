@@ -132,7 +132,7 @@ describe('Palette', () => {
     const ajv = new Ajv();
     const validate = ajv.compile(schema);
 
-    validate(Palettes.databaseAdminPalette);
+    validate(Palettes.defaultTheme);
     expect(validate.errors).toBe(null);
   });
 });
