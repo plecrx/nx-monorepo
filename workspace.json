@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "database-admin": "apps/database-admin",
-    "database-admin-e2e": "apps/database-admin-e2e"
+    "database-admin-e2e": "apps/database-admin-e2e",
+    "ui": "libs/ui"
   }
 }
