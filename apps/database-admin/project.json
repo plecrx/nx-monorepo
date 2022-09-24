@@ -17,7 +17,8 @@
         "tsConfig": "apps/database-admin/tsconfig.app.json",
         "assets": [
           "apps/database-admin/src/favicon.ico",
-          "apps/database-admin/src/assets"
+          "apps/database-admin/src/assets",
+          "apps/database-admin/src/netlify.toml"
         ],
         "styles": [],
         "scripts": [],
