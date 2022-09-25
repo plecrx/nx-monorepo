@@ -1,9 +1,9 @@
 export const light = {
   colors: {
     brand: {
-      primary: '#7A17A2',
-      secondary: '#360A47',
-      tertiary: '#B33BE3',
+      primary: '#B45309',
+      secondary: 'rgb(0, 0, 0, 0.2)',
+      tertiary: '#F59E0B',
       gradient: 'linear-gradient(89.56deg, #68148A 0.76%, #470D5E 99.24%);',
       onPrimary: '#FFFFFF',
       onSecondary: '#FFFFFF',
@@ -59,9 +59,9 @@ export const light = {
 export const dark = {
   colors: {
     brand: {
-      primary: '#601D7B',
-      secondary: '#A130CF',
-      tertiary: '#200A29',
+      primary: 'rgb(217 119 6)',
+      secondary: '#F59E0B',
+      tertiary: 'rgb(0, 0, 0, 0.2)',
       gradient: 'linear-gradient(89.56deg, #68148A 0.76%, #470D5E 99.24%);',
       onPrimary: '#F5F5F5',
       onSecondary: '#F5F5F5',
@@ -114,3 +114,10 @@ export const dark = {
     },
   },
 };
+
+
+/*
+*       primary: '#B45309',
+      secondary: 'rgb(0, 0, 0, 0.2)',
+      tertiary: '#F59E0B',
+* */
