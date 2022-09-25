@@ -128,11 +128,11 @@ const schema: JSONSchemaType<DarkLightPaletteType> = {
 };
 
 describe('Palette', () => {
-  it('should admin palette be valid', () => {
+  it('should plecrx palette be valid', () => {
     const ajv = new Ajv();
     const validate = ajv.compile(schema);
 
-    validate(Palettes.defaultTheme);
+    validate(Palettes.plecrx);
     expect(validate.errors).toBe(null);
   });
 });

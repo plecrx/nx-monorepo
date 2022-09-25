@@ -1,1 +1,1 @@
-export * as defaultTheme from './default';
+export * as plecrx from './plecrx';
