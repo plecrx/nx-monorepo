@@ -1,10 +1,10 @@
 import styled from '@emotion/styled';
-// import { Nickel, Nitrogen } from '../../typography/typography';
+import { Nickel, Nitrogen } from '../../typography/typography';
 
-export const ButtonLabelM = styled.span`
+export const ButtonLabelM = styled(Nickel)`
   padding: 0 8px;
 `;
 
-export const ButtonLabelL = styled.span`
+export const ButtonLabelL = styled(Nitrogen)`
   padding: 0 8px;
 `;
