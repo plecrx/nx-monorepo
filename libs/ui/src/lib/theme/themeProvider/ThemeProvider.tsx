@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import {
   Global,
   css,
@@ -9,14 +10,14 @@ import { getTheme } from '../utils/getTheme';
 
 export type ThemeProviderProps = {
   useDarkMode?: boolean;
-  children?: React.ReactNode | React.ReactNode[];
-  partner: ThemeType;
+  children?: ReactNode | ReactNode[];
+  brand: ThemeType;
   colorPalette: DarkLightPaletteType;
 };
 
 export const ThemeProvider = ({
   children,
-  partner,
+  brand,
   colorPalette,
   useDarkMode = false,
 }: ThemeProviderProps) => (
@@ -37,7 +38,7 @@ export const ThemeProvider = ({
       `}
     />
     <EmotionThemeProvider
-      theme={{ ...getTheme(useDarkMode, colorPalette), ...partner }}
+      theme={{ ...getTheme(useDarkMode, colorPalette), ...brand }}
     >
       {children}
     </EmotionThemeProvider>

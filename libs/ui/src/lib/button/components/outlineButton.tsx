@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { CommonButtonM, CommonButtonL, CommonButton } from './common.styles';
+import {CommonButtonM, CommonButtonL, CommonButton, CommonButtonS} from './common.styles';
 
 const OutlineButton = styled.button`
   ${CommonButton}
@@ -11,8 +11,7 @@ const OutlineButtonPrimary = styled(OutlineButton)`
   color: ${(props) => props.theme.colors.brand.primary};
   :hover {
     border: 1px solid ${(props) => props.theme.colors.brand.primary};
-    background-color: ${(props) =>
-  props.theme.colors.hover.hoverSurfacePrimary};
+    background-color: ${(props) => props.theme.colors.hover.hoverSurfacePrimary};
     color: ${(props) => props.theme.colors.brand.primary};
   }
   :active {
@@ -47,10 +46,18 @@ export const OutlineButtonPrimaryM = styled(OutlineButtonPrimary)`
   ${CommonButtonM}
 `;
 
+export const OutlineButtonPrimaryS = styled(OutlineButtonPrimary)`
+  ${CommonButtonS}
+`;
+
 export const OutlineButtonSecondaryL = styled(OutlineButtonSecondary)`
   ${CommonButtonL}
 `;
 
 export const OutlineButtonSecondaryM = styled(OutlineButtonSecondary)`
   ${CommonButtonM}
+`;
+
+export const OutlineButtonSecondaryS = styled(OutlineButtonSecondary)`
+  ${CommonButtonS}
 `;

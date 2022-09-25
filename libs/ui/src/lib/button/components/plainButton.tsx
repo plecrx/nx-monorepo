@@ -64,3 +64,7 @@ export const PlainButtonSecondaryL = styled(PlainButtonSecondary)`
 export const PlainButtonSecondaryM = styled(PlainButtonSecondary)`
   ${CommonButtonM}
 `;
+
+export const PlainButtonSecondaryS = styled(PlainButtonSecondary)`
+  ${CommonButtonS}
+`;

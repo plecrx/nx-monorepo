@@ -2,6 +2,7 @@ import { Meta, Story } from '@storybook/react';
 import styled from '@emotion/styled';
 import { action } from '@storybook/addon-actions';
 import { ElementType } from 'react';
+import { CodeIcon } from "@heroicons/react/solid";
 import {
   PlainButtonPrimaryL,
   PlainButtonPrimaryM,
@@ -13,7 +14,10 @@ import {
   OutlineButtonSecondaryM,
   ButtonLabelM,
   ButtonLabelL,
+  ButtonIcon, PlainButtonPrimaryS,
 } from './button';
+import {OutlineButtonPrimaryS, OutlineButtonSecondaryS} from "./components/outlineButton";
+import {PlainButtonSecondaryS} from "./components/plainButton";
 
 const RowLayoutContainer = styled.div`
   display: flex;
@@ -39,6 +43,21 @@ const renderButton = (
         <ButtonLabel>{text}</ButtonLabel>
       </Button>
     </div>
+    <div>
+      <Button disabled={disabled} onClick={onClick}>
+        <ButtonIcon>
+          <CodeIcon />
+        </ButtonIcon>
+      </Button>
+    </div>
+    <div>
+      <Button disabled={disabled} onClick={onClick}>
+        <ButtonIcon>
+          <CodeIcon />
+        </ButtonIcon>
+        <ButtonLabel>{text}</ButtonLabel>
+      </Button>
+    </div>
   </RowLayoutContainer>
 );
 
@@ -61,6 +80,22 @@ const Template: Story<TemplateProps> = ({
     {renderButton(PlainButtonPrimaryM, ButtonLabelM, text, disabled, onClick)}
     {renderButton(PlainButtonSecondaryM, ButtonLabelM, text, disabled, onClick)}
 
+    <h2>Plain Button S</h2>
+    <RowLayoutContainer>
+      <PlainButtonPrimaryS disabled={disabled} onClick={onClick}>
+        <ButtonIcon>
+          <CodeIcon />
+        </ButtonIcon>
+      </PlainButtonPrimaryS>
+    </RowLayoutContainer>
+    <RowLayoutContainer>
+      <PlainButtonSecondaryS disabled={disabled} onClick={onClick}>
+        <ButtonIcon>
+          <CodeIcon />
+        </ButtonIcon>
+      </PlainButtonSecondaryS>
+    </RowLayoutContainer>
+
     <h2>Outline Button L</h2>
     {renderButton(OutlineButtonPrimaryL, ButtonLabelL, text, disabled, onClick)}
     {renderButton(
@@ -80,6 +115,24 @@ const Template: Story<TemplateProps> = ({
       disabled,
       onClick
     )}
+
+    <h2>Outline Button S</h2>
+
+    <RowLayoutContainer>
+      <OutlineButtonPrimaryS disabled={disabled} onClick={onClick}>
+        <ButtonIcon>
+          <CodeIcon />
+        </ButtonIcon>
+      </OutlineButtonPrimaryS>
+    </RowLayoutContainer>
+    <RowLayoutContainer>
+      <OutlineButtonSecondaryS disabled={disabled} onClick={onClick}>
+        <ButtonIcon>
+          <CodeIcon />
+        </ButtonIcon>
+      </OutlineButtonSecondaryS>
+    </RowLayoutContainer>
+
   </TemplateContainer>
 );
 

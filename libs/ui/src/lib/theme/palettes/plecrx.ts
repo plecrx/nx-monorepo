@@ -4,7 +4,7 @@ export const light = {
       primary: '#B45309',
       secondary: 'rgb(0, 0, 0, 0.2)',
       tertiary: '#F59E0B',
-      gradient: 'linear-gradient(89.56deg, #68148A 0.76%, #470D5E 99.24%);',
+      gradient: 'linear-gradient(89.56deg, #B45309 0.76%, #F59E0B 99.24%);',
       onPrimary: '#FFFFFF',
       onSecondary: '#FFFFFF',
       onTertiary: '#FFFFFF',
@@ -48,10 +48,10 @@ export const light = {
       shadowPrimary: 'rgba(0, 0, 0, 0.12)',
     },
     hover: {
-      hoverSurfacePrimary: 'rgb(109, 0, 152, 0.16)',
+      hoverSurfacePrimary: 'rgb(180, 83, 9, 0.16)',
       hoverSurfaceSecondary: 'rgb(255, 255, 255, 0.4)',
       hoverSurfaceTertiary: 'rgb(255, 255, 255, 0.16)',
-      hoverBorder: 'rgb(109, 0, 152, 0.4)',
+      hoverBorder: 'rgb(245, 158, 11, 0.4)',
     },
   },
 };
@@ -59,10 +59,10 @@ export const light = {
 export const dark = {
   colors: {
     brand: {
-      primary: 'rgb(217 119 6)',
+      primary: '#d97706',
       secondary: '#F59E0B',
       tertiary: 'rgb(0, 0, 0, 0.2)',
-      gradient: 'linear-gradient(89.56deg, #68148A 0.76%, #470D5E 99.24%);',
+      gradient: 'linear-gradient(89.56deg, #F59E0B 0.76%, #d97706 99.24%);',
       onPrimary: '#F5F5F5',
       onSecondary: '#F5F5F5',
       onTertiary: '#F5F5F5',
@@ -107,17 +107,10 @@ export const dark = {
       shadowPrimary: 'rgba(0, 0, 0, 0.12)',
     },
     hover: {
-      hoverSurfacePrimary: 'rgb(109, 0, 152, 0.84)',
+      hoverSurfacePrimary: 'rgb(180, 83, 9, 0.84)',
       hoverSurfaceSecondary: 'rgb(255, 255, 255, 0.6)',
       hoverSurfaceTertiary: 'rgb(255, 255, 255, 0.84)',
-      hoverBorder: 'rgb(109, 0, 152, 0.6)',
+      hoverBorder: 'rgb(245, 158, 11, 0.6)',
     },
   },
 };
-
-
-/*
-*       primary: '#B45309',
-      secondary: 'rgb(0, 0, 0, 0.2)',
-      tertiary: '#F59E0B',
-* */

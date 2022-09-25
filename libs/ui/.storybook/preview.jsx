@@ -7,7 +7,7 @@ export const globalTypes = {
   theme: {
     name: 'App Icon',
     description: 'Global theme for components',
-    defaultValue: 'databaseAdmin',
+    defaultValue: 'database-admin',
     toolbar: {
       icon: 'photo',
       items: Object.keys(brand),
@@ -17,7 +17,7 @@ export const globalTypes = {
   colorScheme: {
     name: 'Color Scheme',
     description: 'Choose the color Scheme',
-    defaultValue: 'databaseAdmin',
+    defaultValue: 'plecrx',
     toolbar: {
       icon: 'paintbrush',
       items: Object.keys(palettes),
@@ -29,7 +29,7 @@ export const globalTypes = {
 export const decorators = [
   (Story, context) => (
     <ThemeProvider
-      partner={brand[context.globals.theme]}
+      brand={brand[context.globals.theme]}
       useDarkMode={useDarkMode()}
       colorPalette={palettes[context.globals.colorScheme]}
     >
