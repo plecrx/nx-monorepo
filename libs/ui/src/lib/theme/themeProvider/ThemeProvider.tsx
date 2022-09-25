@@ -23,7 +23,7 @@ export const ThemeProvider = ({
   <>
     <Global
       styles={css`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
         html,
         body,
         #root {
